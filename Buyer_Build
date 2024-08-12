@@ -170,10 +170,10 @@ getgenv().hojixv = {
         Z_Range = 1
     },
     ['SilentFOV'] = {
-        Visible = true,
+        Visible = false,
         Sticky = false,
         Filled = false,
-        Radius = 100,
+        Radius = 60,
         Center = false,
         Transparency = 1,
         Thickness = 1,
@@ -181,7 +181,7 @@ getgenv().hojixv = {
         Type = "Mouse"
     },
     ['SilentChecks'] = {
-        VisibleCheck = false,
+        VisibleCheck = true,
         CrewCheck = false,
         FriendCheck = false,
         TeamCheck = false,
@@ -236,7 +236,7 @@ getgenv().hojixv = {
         ManualDetection = 50
     },
     ['Resolver'] = {
-        Enabled = true,
+        Enabled = false,
         For = "Silent",
         Type = "Delta", -- MoveDirection
         Threshold = 85,
@@ -309,10 +309,10 @@ getgenv().Universal = {
         UsePrediction = true,
         DisableThird = true,
         DisableFirst = true,
-        Prediction = 0,
-        Smoothing_Value = 1,
+        Prediction = 0.1256,
+        Smoothing_Value = 0.3,
         WallCheck = false,
-        Ko_Check = false,
+        Ko_Check = true,
         UseShakeValue = false,
         ShakeValue = 0,
         ClosestBodyPart = false,
@@ -383,8 +383,8 @@ getgenv().Universal = {
         NearestCursorHitpart = true
     },
     ['FieldOfView'] = {
-        Visible = true,
-        Radius = 300,
+        Visible = false,
+        Radius = 500,
         Transparency = 0.14,
         Type = "Mouse",
         Filled = false,
@@ -434,19 +434,20 @@ getgenv().Triggerbot = {
     ['Main'] = {
         Global_Version = "V.01",
         Enabled = true,
-        Keybind = "q",
+        Keybind = "c",
         Mode = 1,  -- 1 = Always On, 2 = Toggle, 3 = Hold
         LinkWithSilent = false,
         LinkWithCamlock = false,
     },
     ['CustomKeyBind'] = {
         Mouse = "MouseButton2",
+        ToggleKey = Enum.KeyCode.V  -- Enum For mapping 
     },
     ['Settings'] = {
         RadiusSettings = {
             UseRange = false, 
-            Field = 35, 
-            AirshotRadius = 30,  
+            Field = 11, 
+            AirshotRadius = 7,  
             Interval = 0.14,
             NearestCursorHitpart = false,
         },
@@ -467,11 +468,11 @@ getgenv().Triggerbot = {
         },
         ['RR'] = {
             Visible = true,
-            Transparency = 0.1,
-            Thickness = 0.1,
+            Transparency = 1,
+            Thickness = 1,
             Filled = false,
             Line = true,
-            Color = Color3.fromRGB(255, 255, 255),
+            Color = Color3.fromRGB(168, 50, 137),
             Box = false,
         },
         ['Custom_Delay'] = {
@@ -495,16 +496,16 @@ getgenv().Triggerbot = {
     },
     ['Config'] = {
         ['Regular'] = {
-            Prediction = 0.1255,
-            Delay = 0.01,
+            Prediction = 0.105,
+            Delay = 1,
             HitParts = {"Head", "UpperTorso", "HumanoidRootPart", "LowerTorso", "LeftHand", "RightHand", "LeftLowerArm", "RightLowerArm", "LeftUpperArm", "RightUpperArm", "LeftFoot", "LeftLowerLeg",  "LeftUpperLeg", "RightLowerLeg", "RightFoot",  "RightUpperLeg"},
         },
         ['Airshot'] = {
             Enabled = true,
-            Prediction = 0.1305,
+            Prediction = 0.105,
             Nearest = false,
             HitParts = {"Head", "UpperTorso", "HumanoidRootPart", "LowerTorso", "LeftHand", "RightHand", "LeftLowerArm", "RightLowerArm", "LeftUpperArm", "RightUpperArm", "LeftFoot", "LeftLowerLeg",  "LeftUpperLeg", "RightLowerLeg", "RightFoot",  "RightUpperLeg"},
-            Delay = 0
+            Delay = 1
         }
     },
     ['WhitelistedGuns'] = {
@@ -562,7 +563,7 @@ getgenv().BruhImGeeked = {
 
         HealthTransparencyText = 1,
         ['HealthText'] = {
-            Enabled = true,
+            Enabled = false,
             OutLine = false,
             Color = Color3.fromRGB(0, 255, 0),
             Chams = false,
