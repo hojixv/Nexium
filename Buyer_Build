@@ -1,36 +1,3 @@
---[[
-
-🟢 Rivals
-🟢 Arsenal
-🟢 Fallen Survival
-🟢 Gunfight Arena 
-🟢 No-Scope Arcade
-🟢 Phantom Forces
-🟢 Counter Blox-1
-🟢 Kat
-🟢 Criminality
-🟢 Fortblox
-🟢 Jailbird
-🟢 Operations Siege
-🟢 Anarchy
-🟢 Item Asylum
-🟢 Neighborhood War
-🟡 Trident
-🟢 REALISTIC HOOD TESTING
-🟢 Murder Mystery 2
-🟢 Aimblox
-🟢 Gun Grounds
-🟡 Frontlines
-🟡 Airsoft Battles
-🟢 Fortline
-🟢 The Bronx
-
---]]
-
-
-script_key="NEXIUM-Z_KEY";
-getgenv().script_key = script_key;
-
 getgenv().hojixv = {
     ['Silent'] = {
         Global_Version = "V.01",
