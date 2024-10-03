@@ -1,3 +1,4 @@
+script_key="ydPvKjqRaKEdouCEwKvwZplhrpLDPwGV";
 getgenv().hojixv = {
     ['Silent'] = {
         Global_Version = "V.01",
@@ -207,7 +208,6 @@ getgenv().hojixv = {
         UseKickId = true, -- kicks on ids we dont use
     }
 }
-
 
 getgenv().Universal = {
     ['Camlock'] = {
