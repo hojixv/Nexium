@@ -1,4 +1,4 @@
-script_key="ydPvKjqRaKEdouCEwKvwZplhrpLDPwGV";
+script_key="";
 getgenv().hojixv = {
     ['Silent'] = {
         Global_Version = "V.01",
